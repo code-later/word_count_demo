@@ -1,0 +1,21 @@
+{
+  "name": "word_count",
+  "version": "1.0.0",
+  "description": "Count words in text",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "keywords": [
+    "demo"
+  ],
+  "author": "Dirk Breuer",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^25.5.2"
+  }
+}
