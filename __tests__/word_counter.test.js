@@ -1,13 +1,13 @@
-const { WordCounter } = require('../lib/word_counter');
+const { WordCounter } = require('../lib/word_counter')
 
-let subject;
+let subject
 
 beforeEach(() => {
   subject = new WordCounter()
-});
+})
 
 test('count words in text', () => {
-  const input = "No, no, no, I kill the bus driver.";
+  const input = 'No, no, no, I kill the bus driver.'
 
   expect(subject.countWords(input)).toEqual([
     ['no', 3],
@@ -16,8 +16,8 @@ test('count words in text', () => {
     ['the', 1],
     ['bus', 1],
     ['driver', 1]
-  ]);
-});
+  ])
+})
 
 test('ignore case during count', () => {
   const input = 'No, no'
