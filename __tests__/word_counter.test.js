@@ -19,5 +19,16 @@ test('count words in text', () => {
   ]);
 });
 
-test('', () => {
-});
+test('ignore case during count', () => {
+  const input = 'No, no'
+
+  expect(subject.countWords(input)).toEqual([
+    ['no', 2]
+  ])
+})
+
+test('handle empty input', () => {
+  const input = ''
+
+  expect(subject.countWords(input)).toEqual([])
+})
